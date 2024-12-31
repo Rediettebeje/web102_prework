@@ -172,10 +172,7 @@ const descriptionContainer = document.getElementById("description-container");
 // use filter or reduce to count the number of unfunded games
 const unfundedCount = GAMES_JSON.filter(game => game.pledged < game.goal).length;
 
-const fundedCount = GAMES_JSON.filter(game => game.pledged > game.goal).length;
 
-
-// create a string that explains the number of unfunded games using the ternary operator
 // create a string that explains the number of unfunded games using the ternary operator
 const displaystr = `A total of $${totalRaised.toLocaleString('en-US')} has been raised for ${GAMES_JSON.length} games. 
 ${unfundedCount > 0 ? `Currently, ${unfundedCount} games remain unfunded. We need your help to fund these amazing games!` 
