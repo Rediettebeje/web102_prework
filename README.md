@@ -1,10 +1,10 @@
 # WEB102 Prework - *Name of App Here*
 
-Submitted by: **Your Name Here**
+Submitted by: **Rediet Tebeje**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Sea Monster Crowdfunding** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
 ## Required Features
 
@@ -17,7 +17,8 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [ ] A search feature allowing users to find a specific game.
+* [ ] Enhanced CSS styling, including responsiveness, improved typography, and visually appealing aesthetics.
 
 ## Video Walkthrough
 
@@ -32,9 +33,11 @@ GIF created with ...
 [ScreenToGif](https://www.screentogif.com/) for Windows
 [peek](https://github.com/phw/peek) for Linux. -->
 
-## Notes
+## Notes: Challenges encountered while building the app
 
-Describe any challenges encountered while building the app.
+* [ ] Managing the JSON data for games and ensuring it was correctly parsed and displayed 
+* [ ] Adding and removing elements dynamically required a deep understanding of DOM manipulation.
+* [ ] Sorting and filtering games, along with search functionality, posed challenges with logic and performance
 
 ## License
 
