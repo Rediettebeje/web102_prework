@@ -200,11 +200,52 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const [firstGame, secondGame] = sortedGames;
+
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const firstGameName = document.createElement("h3");
+firstGameName.textContent = firstGame.name;
+firstGameContainer.appendChild(firstGameName);
 
 // do the same for the runner up item
+const secondGameName = document.createElement("h3");
+secondGameName.textContent = secondGame.name;
+secondGameContainer.appendChild(secondGameName);
 
+// Grab the input field and button
+const searchInput = document.getElementById("search-input");
+const searchBtn = document.getElementById("search-btn");
+
+// Function to search for a game
+function searchGame() {
+    const query = searchInput.value.toLowerCase(); // Get the search query in lowercase
+    
+    // Filter games by matching the name with the query
+    const filteredGames = GAMES_JSON.filter(game =>
+        game.name.toLowerCase().includes(query)
+    );
+
+    // Clear the current game display
+    deleteChildElements(gamesContainer);
+
+    // Add the filtered games to the page
+    if (filteredGames.length > 0) {
+        addGamesToPage(filteredGames);
+    } else {
+        gamesContainer.innerHTML = "<p>No games found matching your search.</p>";
+    }
+}
+
+// Add an event listener to the search button
+searchBtn.addEventListener("click", searchGame);
+
+// (Optional) Allow pressing Enter to trigger the search
+searchInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        searchGame();
+    }
+});
 
 
    
