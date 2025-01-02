@@ -1,82 +1,172 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
 
 body {
-    font-family: 'Cabin';
-    background-color: #758190;
+  font-family: "Cabin", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Header Section */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  padding: 15px 10px;
+  color: white;
+  border-radius: 8px;
+  gap: 10px;
+  box-sizing: border-box;
 }
 
 #tentacles {
-    width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  margin-right: 10px;
 }
 
-.header {
-    display: flex;
-    background-color: lightblue;
-    padding: 1%;
-    align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+.header-text {
+  font-size: 1.5rem;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0;
 }
 
+#search-input {
+  padding: 8px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex-basis: 100%;
+  /* Full width on small screens */
+  flex-grow: 1;
+  max-width: 200px;
+  /* Optional to limit size */
+  box-sizing: border-box;
+}
+
+#search-btn {
+  padding: 8px 15px;
+  background-color: #6ea8d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+  background-color: #5d98c3;
+}
+/* Description Container */
+#description-container {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Stats Section */
 .stats-container {
-    display: flex;
-    align-items: center;
-}
-
-
-.stats-container:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
 }
 
 .stats-card {
-    background-color: #a8b0bc;
-    border-radius: 7px;
-    padding: 1%;
-    margin: 1%;
-    width: 100%;
-    text-align: center;
+  background-color: #a8b0bc;
+  border-radius: 7px;
+  padding: 10px;
+  width: calc(100% - 20px);
+  max-width: 300px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-#num-contributions, #total-raised, #num-games {
-    font-size: 50px;
+.stats-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px lightblue;
 }
 
+#num-contributions,
+#total-raised,
+#num-games {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Games Section */
 #games-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.game-img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
 }
 
 .game-card {
-    background-color: #FFFFFF;
-    padding: 1%;
-    margin: 1%;
-    width: 300px;
-    text-align: center;
-    border-radius: 7px;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% - 20px);
+  max-width: 300px;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .game-card:hover {
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+  cursor: pointer;
+  box-shadow: 0 0 30px lightblue;
 }
 
+.game-img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Button Section */
 #button-container {
-    text-align: center;
+  text-align: center;
+  margin: 20px 0;
 }
 
 button {
-    font-family: 'Cabin';
-    border: none;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 7px;
+  font-family: "Cabin", sans-serif;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 7px;
+  background-color: lightblue;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #6ea8d4;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 600px) {
+  #search-input {
+    flex-basis: auto;
+    /* Reverts to auto width for larger screens */
+    max-width: 250px;
+  }
+  .stats-card {
+    width: calc(33% - 20px);
+  }
+
+  .game-card {
+    width: calc(33% - 20px);
+  }
 }
