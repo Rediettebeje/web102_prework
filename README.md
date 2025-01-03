@@ -19,7 +19,7 @@ The following **optional** features are implemented:
 
 * [✅] A search feature allowing users to find a specific game.
 * [✅] Enhanced CSS styling, including responsiveness, improved typography, and visually appealing aesthetics.
-* [✅] A navigation bar that allows users to get to the  Game section quickly
+* [✅] A navigation bar that allows users to get to the Game section quickly
 
 ## Video Walkthrough
 

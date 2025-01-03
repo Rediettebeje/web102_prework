@@ -47,7 +47,6 @@ body {
   flex-grow: 1;
   margin: 0;
   font-family: header;
-
 }
 a {
   text-decoration: none;
@@ -62,9 +61,8 @@ a {
   text-align: center;
   margin-top: 20px;
   font-family: header;
-  
 }
-.disc{
+.disc {
   text-align: center;
 }
 #search-input {
@@ -193,7 +191,6 @@ button:hover {
   background-color: #6ea8d4;
 }
 
-
 /* Media Queries for Responsiveness */
 @media (min-width: 600px) {
   #search-input {
@@ -219,10 +216,10 @@ button:hover {
   .game-card {
     width: calc(33% - 20px);
   }
-  .header{
+  .header {
     margin-bottom: 80px;
   }
-    .text {
-      margin-top: 100px;
-    }
+  .text {
+    margin-top: 100px;
+  }
 }
