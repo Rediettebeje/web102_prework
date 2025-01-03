@@ -19,14 +19,13 @@ The following **optional** features are implemented:
 
 * [✅] A search feature allowing users to find a specific game.
 * [✅] Enhanced CSS styling, including responsiveness, improved typography, and visually appealing aesthetics.
-* [✅] A navigation bar that allows users to get to the Game section quickly
+* [✅] A navigation bar that allows users to get to the  Game section quickly
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/assets/games.gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+![Video Walkthrough](path/to/assets/games.gif)
 GIF created with ...  
 [ LiceCap](https://www.cockos.com/licecap/) 
 
