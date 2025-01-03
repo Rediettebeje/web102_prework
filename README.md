@@ -25,7 +25,9 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-[Video Walkthrough](path/to/assets/games.gif)
+[Video Walkthrough](assets/games.gif)
+
+
 GIF created with ...  
 [ LiceCap](https://www.cockos.com/licecap/) 
 
