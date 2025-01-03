@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-[Video Walkthrough](assets/games.gif)
+<!-- [Video Walkthrough](assets/games.gif) -->
 
 <img src='assets/games.gif' title='Video Walkthrough'/>
 
