@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='./assets/games.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/link/to/assets/games.gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ...  
 [ LiceCap](https://www.cockos.com/licecap/) 
