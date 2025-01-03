@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: header;
+  src: url(./fonts/RobotoSlab-Bold.ttf);
+}
 
+@font-face {
+  font-family: h1;
+  src: url(./fonts/Mulish-Regular.ttf);
+}
+
+@font-face {
+  font-family: p;
+  src: url(./fonts/Aileron-Regular.otf);
+}
 body {
-  font-family: "Cabin", sans-serif;
+  font-family: p;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
@@ -19,6 +32,7 @@ body {
   border-radius: 8px;
   gap: 10px;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 #tentacles {
@@ -32,8 +46,27 @@ body {
   text-align: center;
   flex-grow: 1;
   margin: 0;
+  font-family: header;
+
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  margin-right: 20px;
 }
 
+.text {
+  text-align: center;
+  margin-top: 20px;
+  font-family: header;
+  
+}
+.disc{
+  text-align: center;
+}
 #search-input {
   padding: 8px;
   border: 2px solid #ffffff;
@@ -56,6 +89,7 @@ body {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: p;
 }
 
 #search-btn:hover {
@@ -78,14 +112,17 @@ body {
 }
 
 .stats-card {
-  background-color: #a8b0bc;
+  background-color: lightblue;
   border-radius: 7px;
   padding: 10px;
   width: calc(100% - 20px);
+  /* Adjust to allow for larger width */
   max-width: 300px;
+  /* Increase the maximum width */
   text-align: center;
   box-sizing: border-box;
   transition: box-shadow 0.3s ease-in-out;
+  color: white;
 }
 
 .stats-card:hover {
@@ -136,6 +173,7 @@ body {
 #button-container {
   text-align: center;
   margin: 20px 0;
+  margin-bottom: 50px;
 }
 
 button {
@@ -155,18 +193,36 @@ button:hover {
   background-color: #6ea8d4;
 }
 
+
 /* Media Queries for Responsiveness */
 @media (min-width: 600px) {
   #search-input {
     flex-basis: auto;
-    /* Reverts to auto width for larger screens */
     max-width: 250px;
   }
-  .stats-card {
-    width: calc(33% - 20px);
+  .stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 80%;
+    margin: 20px auto;
   }
-
+  .stats-container {
+    flex: 1;
+    padding: 10px;
+  }
+  .stats-card {
+    width: calc(100% - 40px);
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
   .game-card {
     width: calc(33% - 20px);
   }
+  .header{
+    margin-bottom: 80px;
+  }
+    .text {
+      margin-top: 100px;
+    }
 }
